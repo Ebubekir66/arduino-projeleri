@@ -1,3 +1,7 @@
+
+
+
+
 #define Buton0 3  //butonların pinlerini tanımlıyoruz
 #define Buton1 2  //
 
@@ -13,6 +17,10 @@ int ledler[] = {  //ledleri liste içerisinde pinlerini tanıtıyoz
   
 };
 
+
+
+//// bize destek olmak için YOUTUBE videomuzu beğenip paylaşabilirsiniz
+
 void setup()
 {
   pinMode(Buton0, INPUT);  // butonları "giriş" olarak tanımlıyoruz
@@ -22,6 +30,7 @@ void setup()
     pinMode(ledler[i], OUTPUT); //i değişkenlerini "çıkış" olarak tanımlıyoruz.
   }
 }
+//// bu gibi projeleri yapmak için youtube kanalımıza abone olun
 void loop()
 {
   while(digitalRead(Buton0) == 1){  //burada while döngüsü içinde buton0 dan gelen veri 1 olduğunda çalışacak bloğu yazıyoruz
@@ -41,3 +50,4 @@ void loop()
 
   
 }
+
